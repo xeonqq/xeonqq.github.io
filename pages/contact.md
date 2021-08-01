@@ -1,12 +1,13 @@
 ---
 layout: page
 title: "Contact"
-meta_title: "Contact and use our contact form"
-subheadline: "Wufoo-powered contact forms"
-teaser: "Get in touch with me? Use the contact form."
+subheadline: ""
+teaser: "Get in touch with me?"
 permalink: "/contact/"
 ---
-If you need a fabulous contact form for your website, I suggest you use [Wufoo][1]. You can use three forms for free, you get no spam and if you get more than 100 entries you have to pay.
+I am an robotics software engineer, currently working for the world's leading premiua automobiles manufacturer to bring the next-gen autonomous driving vehicle onto the public street.
+My biggest passion is to combine my robotics domain knowledge with actual clean code to bring soul into the robots.
+Feel free to contact me on [Linkedin][1] for any coorporation.
 
 
- [1]: http://www.wufoo.com/
+ [1]: https://www.linkedin.com/in/xeonqq/
