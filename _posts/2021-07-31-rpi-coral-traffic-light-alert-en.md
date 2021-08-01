@@ -24,7 +24,6 @@ categories:
   float: left;
   width: 9.09%;
   padding: 5px;
-  border: 1px solid black
 }
 .center {
   display: block;
@@ -35,6 +34,10 @@ categories:
   content: "";
   clear: both;
   display: table;
+}
+.caption {
+  font-size: 12px;
+  text-align: center;
 }
 </style>
 
@@ -55,7 +58,7 @@ It acts like a co-pilot which can help inattentive driver avoid violating traffi
 
 
 ## What `Co-Pilot` sees
-[](https://github.com/xeonqq/co-pilot/images/traffic_light_detection_seq.gif)
+<img src="https://github.com/xeonqq/co-pilot/images/traffic_light_detection_seq.gif" alt="" style="width:100%">
 
 ## Hardware Setup
 ![](https://github.com/xeonqq/co-pilot/images/hardware.jpg)
@@ -79,43 +82,54 @@ the format of edgetpu tflite, it directly runs on Coral accelerator. The input s
 applied twice to cover the whole image size. With the help Coral it takes ~150ms for the two inferences to complete. However, if we were running the 
  inference purely on CPU it would take 2.3 sec, which is not acceptable for real-time application.
  
-Given the bounding box locations of the detected traffic lights, they are feed into a custom trained classification net. Its output consists of
+Given the bounding box locations of the detected traffic lights, they are resized to 32x16 and then feed into a custom trained classification net. Its output consists of
 the probabilities of 11 categories, namely \[*green, red, yellow, red_yellow, green_left, red_left, green_right, red_right, pedestrian, side, none*\].
 <div class="clearfix">
   <div class="img-container">
   <img src="{{ site.urlimg }}lights/green.bmp" alt="" style="width:100%">
+  <p class="caption">green</p>  
   </div>
   <div class="img-container">
   <img src="{{ site.urlimg }}/lights/red.bmp" alt="" style="width:100%">
+  <p class="caption">red</p>  
   </div>
 
   <div class="img-container">
   <img src="{{ site.urlimg }}/lights/yellow.bmp" alt="" style="width:100%">
+  <p class="caption">yellow</p>  
   </div>
   <div class="img-container">
   <img src="{{ site.urlimg }}/lights/red_yellow.bmp" alt="" style="width:100%">
+  <p class="caption">red_yellow</p>  
   </div>
   
   <div class="img-container">
   <img src="{{ site.urlimg }}/lights/green_left.bmp" alt="" style="width:100%">
+  <p class="caption">green_left</p>  
   </div>
   <div class="img-container">
   <img src="{{ site.urlimg }}/lights/red_left.bmp" alt="" style="width:100%">
+  <p class="caption">red_left</p>  
   </div>
   <div class="img-container">
   <img src="{{ site.urlimg }}/lights/green_right.bmp" alt="" style="width:100%">
+  <p class="caption">green_right</p>  
   </div>
   <div class="img-container">
   <img src="{{ site.urlimg }}/lights/red_right.bmp" alt="" style="width:100%">
+  <p class="caption">red_right</p>  
   </div>
   <div class="img-container">
   <img src="{{ site.urlimg }}/lights/pedestrian.bmp" alt="" style="width:100%">
+  <p class="caption">pedestrian</p>  
   </div>
   <div class="img-container">
   <img src="{{ site.urlimg }}/lights/side.bmp" alt="" style="width:100%">
+  <p class="caption">side</p>  
   </div>
   <div class="img-container">
   <img src="{{ site.urlimg }}/lights/none.bmp" alt="" style="width:100%">
+  <p class="caption">none</p>  
   </div>
 </div>
 
