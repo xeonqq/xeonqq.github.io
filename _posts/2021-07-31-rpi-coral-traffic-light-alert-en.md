@@ -148,6 +148,14 @@ Certain pre-recorded voice alert will be played accordingly based on the state o
 * ~100ms delay on capturing RGB image, ~100ms delay on transferring data to Coral accelerator. Both problem might be mitigated
 when depolyed on Pi 4 due to faster processing power and USB 3.0, which can enable higher frame rate.
 
+{% if true %}
+<div class="ads">
+{% include advertising_wide.html %}
+</div><!-- /.ads -->
+
+{% endif %}
+
+
 # Deployment Instructions
 ## Dependencies
 ```
