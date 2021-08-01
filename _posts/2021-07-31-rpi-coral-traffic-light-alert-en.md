@@ -57,11 +57,11 @@ It acts like a co-pilot which can help inattentive driver avoid violating traffi
 <iframe width="720" height="512" src="https://www.youtube.com/embed/tCmUoWLdjoo" frameborder="0" allowfullscreen></iframe>
 
 
-## What `Co-Pilot` sees
-<img src="https://github.com/xeonqq/co-pilot/images/traffic_light_detection_seq.gif" alt="" style="width:100%">
+## What Co-Pilot sees
+<img src="{{ site.urlimg }}traffic_light_detection_seq.gif" alt="traffic_light_detection_seq" style="width:100%">
 
 ## Hardware Setup
-![](https://github.com/xeonqq/co-pilot/images/hardware.jpg)
+<img src="{{ site.urlimg }}hardware.jpg" alt="hardware" style="width:100%">
 * Raspberry Pi 3
 * Raspberry Pi Camera v2
 * [Raspberry Pi 3 case](https://www.berrybase.de/raspberry-pi/raspberry-pi-computer/gehaeuse/fuer-raspberry-pi-3-2-1-modell-b/acryl-case-f-252-r-big7-und-raspberry-pi)
@@ -140,13 +140,6 @@ net is a light weighted CNN which has similar architecture like LeNet. The class
 In the end, a tracker is implemented using Kalman filter and Hungarian algorithm to keep track only the relevant traffic light for the driver.
 Certain pre-recorded voice alert will be played accordingly based on the state of the relevant traffic light.
 
-{% if true %}
-<div class="ads">
-{% include advertising_wide.html %}
-</div><!-- /.ads -->
-{% endif %}
-
-
 ## Limitations
 * Currently works only with vertically placed traffic lights, optimized for Germany.
 * Delay of ~0.3 sec for each detection (Rpi 4 might have better performance, didn't have one to test)
@@ -203,5 +196,12 @@ python3 -m src.reprocess  --ssd_model models/ssd_mobilenet_v2_coco_quant_no_nms_
 ```
 
 Both main and reprocess can be run without Coral TPU by specifying --cpu option.
+
+
+{% if true %}
+<div class="ads">
+{% include advertising_wide.html %}
+</div><!-- /.ads -->
+{% endif %}
 
 [14]: https://raw.githubusercontent.com/daviddao/spatial-transformer-tensorflow/master/data/mnist_sequence1_sample_5distortions5x5.npz
