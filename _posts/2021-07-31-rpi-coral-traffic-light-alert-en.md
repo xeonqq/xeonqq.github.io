@@ -56,6 +56,15 @@ It acts like a co-pilot which can help inattentive driver avoid violating traffi
 ## Watch the demo in car
 <iframe width="720" height="512" src="https://www.youtube.com/embed/tCmUoWLdjoo" frameborder="0" allowfullscreen></iframe>
 
+## Motivation
+Here is my motivation to start this project: once I was driving, and I was lost in the part of the city, while stressed to find the right way, I accidently crossed a red light.
+Afterwards, I was thinking what if there were a machine which can remind me a red light, so maybe I can avoid the mistake. 
+
+The system does once prevent me to across another red light after I deployed it:). And in the end the alert during the red to green transition ("Ready Go") turns out to be more useful than the "Attention Red", 
+which reduce the chance that the driver behind to horn at you, that's a nice side effect.
+
+On the way of building Co-Pilot, I have to tackle detection, classification, matching, tracking, threading, real time, etc. From problem analysis to finding the right solution.
+
 
 ## What Co-Pilot sees
 <img src="{{ site.urlimg }}traffic_light_detection_seq.gif" alt="traffic_light_detection_seq" style="width:100%">
@@ -73,7 +82,7 @@ It acts like a co-pilot which can help inattentive driver avoid violating traffi
 * optional: USB pendrive (For bigger storage of recordings)
 
 ## How it works
-Once Co-Pilot is started, the Pi camera will continuously capture video at 1120x624 at 24fps, images will be captured during recording via
+Once Co-Pilot is started, the Pi camera will continuously capture video at 1120x624 at 20fps, images will be captured during recording via
 the video port at 5Hz. The image is then resized to 600x300 as the input for detecting traffic light and classifying its state.
 
 For achieving this, two neural networks are used, a detection net to extract the locations of the traffic lights in the image and a classification net for classifying their states.
