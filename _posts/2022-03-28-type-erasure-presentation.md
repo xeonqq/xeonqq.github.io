@@ -8,11 +8,12 @@ tags:
     - post format
 categories:
     - c++ 
-iframe: "<iframe width='970' height='546' src='//www.youtube.com/embed/w8VLYtcB6xw' frameborder='0' allowfullscreen></iframe>"
+
+iframe: "<iframe width='970' height='546' src='//www.youtube.com/embed/4sCfFAAbl70' frameborder='0' allowfullscreen></iframe>"
 video:
-    embedURL: "https://www.youtube.com/embed/w8VLYtcB6xw"
-    contentURL: "https://www.youtube.com/embed/w8VLYtcB6xw"
-    thumbnailUrl: "https://i3.ytimg.com/vi/4sCfFAAbl70/maxresdefault.jpg"
+    embedURL: "https://www.youtube.com/embed/4sCfFAAbl70"
+    contentURL: "https://www.youtube.com/embed/4sCfFAAbl70"
+    thumbnailUrl: "https://i3.ytimg.com/vi/w8VLYtcB6xw/maxresdefault.jpg"
 
 ---
 Part 2: [Talking is cheap I will show you the code](https://youtu.be/w8VLYtcB6xw)
