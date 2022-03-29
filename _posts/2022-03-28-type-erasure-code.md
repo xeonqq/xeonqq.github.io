@@ -19,4 +19,4 @@ video:
 ---
 Full version of the code is on my github [simple functor](https://github.com/xeonqq/simple_functor).
 
-Part 1: [Short introduction of std::function if you are not familiar with it](https://youtu.be/4sCfFAAbl70)
+Part 1: [Short introduction of std::function if you are not familiar with it](https://xeonqq.github.io/c++/type-erasure-presentation/)

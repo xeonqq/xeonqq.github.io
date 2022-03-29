@@ -16,4 +16,4 @@ video:
     thumbnailUrl: "https://i3.ytimg.com/vi/w8VLYtcB6xw/maxresdefault.jpg"
 
 ---
-Part 2: [Talking is cheap I will show you the code](https://youtu.be/w8VLYtcB6xw)
+Part 2: [Talking is cheap I will show you the code](https://xeonqq.github.io/c++/type-erasure-code/)
