@@ -1,0 +1,18 @@
+---
+layout: video
+show_meta: false
+title: "Type-erasure in C++, learn it by re-implement std::function (part 1 presentation)"
+subheadline: ""
+teaser: "Let's re-implement std::function using type-erasure"
+tags:
+    - post format
+categories:
+    - c++ 
+iframe: "<iframe width='970' height='546' src='//www.youtube.com/embed/w8VLYtcB6xw' frameborder='0' allowfullscreen></iframe>"
+video:
+    embedURL: "https://www.youtube.com/embed/w8VLYtcB6xw"
+    contentURL: "https://www.youtube.com/embed/w8VLYtcB6xw"
+    thumbnailUrl: "https://i3.ytimg.com/vi/4sCfFAAbl70/maxresdefault.jpg"
+
+---
+Part 2: [Talking is cheap I will show you the code](https://youtu.be/w8VLYtcB6xw)
