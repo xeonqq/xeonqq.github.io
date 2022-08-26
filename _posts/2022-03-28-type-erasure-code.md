@@ -11,6 +11,7 @@ categories:
 
 iframe: "<iframe width='970' height='546' src='//www.youtube.com/embed/w8VLYtcB6xw' frameborder='0' allowfullscreen></iframe>"
 video:
+    uploadDate: "2022-03-28T08:00:00+08:00"
     embedURL: "https://www.youtube.com/embed/w8VLYtcB6xw"
     contentURL: "https://www.youtube.com/embed/w8VLYtcB6xw"
     thumbnailUrl: "https://i3.ytimg.com/vi/4sCfFAAbl70/maxresdefault.jpg"
