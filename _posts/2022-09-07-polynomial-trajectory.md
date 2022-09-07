@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Minimum Jerk Trajectory Generation with 5th Order Polynomial"
+title: "Autonomous Driving 101: Minimum Jerk Trajectory Generation with 5th Order Polynomial"
 subheadline: "trajectory planning"
 teaser: "Do you wonder how autonoumous vehicle generate same and comfortable trajectory, polynomial trajectory planning is one way"
 header: no
@@ -52,12 +52,27 @@ Moreover, after understanding minimum jerk trajectory, it should be trivial to d
 ### Minimum Jerk Trajectory
 
 Consider the car that we humans are driving, what is the controll input we give to the system?
-- *Pressing of Gas pendel* 
-- *Steering of the Wheel*
+- *Pressing of gas pedal* (longitudinal control)
+- *Steering of the Wheel* (lateral control)
 
-Take *Pressing of Gas pendel* for example, by pressing it "harder" or "softer", we are demanding a certain acceleration (2nd order derivative of distance) to the car. And due to inertia of the car, it is never physically possible to demand an arbitary velocity (1st oder derivative of distance) to the car, so the velocity can not have sudden jump. Therefore it can be defined that car is a *2nd order system*.
+## Let's consider the Longitudinal case first
 
-- *Steering of the Wheel*
+Take *Pressing of gas pedal* for example, by pressing it "harder" or "softer", we are demanding a certain acceleration (2nd order derivative of distance) to the car. The rate of change of the gas pedal is the jerk that we are commanding. 
+<iframe src="https://giphy.com/embed/l0HlRvbwQG5kWECSQ" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/southparkgifs-l0HlRvbwQG5kWECSQ">via GIPHY</a></p>
+So intuitively if you press the pedal too quick and release it abruptly, it can easily results in physical discomfort.
+
+So as for autonoumous vehicle, it would make sense to generate a trajectory, which can go from start position to goal position, and at the same time tries to minimize the jerk introduced during the execuation of the trajectory.
+
+So if we represent distance $x$ as a function of time $x=f(t)$, jerk will be the 3rd derivative of it, so $j=f^{(3)}(t)$, or simply $j=x'''$ for short.
+
+## Problem definition
+
+We want to generate a 1D trajectory, which goes from $x_0$ to $x_1$ longitudinally, in given time from $t_0$ to $t_1$
+
+In addition, the generated trajectory has minimal jerk, namely the sum of $x'''$ squared is minimal.
+
+other minimal snap or even higher order trajectory follow the same principle
+
 Calculus of Variations
 Coursera course [Robotics: Aerial Robotics](https://www.coursera.org/learn/robotics-flight/lecture/oRtvH/time-motion-and-trajectories) from Prof. Vijay Kumar gives a quick introduction of 
 
@@ -67,16 +82,5 @@ Euler Lagrange Equation
 
    <img src="{{ site.urlimg }}minimum_jerk_trajectory.jpg" alt="minimum_jerk_trajectory" style="width:100%" class="center">
 
-## Problem definition
-
-We want to generate a 1D trajectory, which goes from $x_0$ to $x_1$, in given time $T$.
-
-In addition, the generated trajectory has minimal jerk, namely the sum of $x'''$ squared is minimal.
-
-other minimal snap or even higher order trajectory follow the same principle
 
 
-{% if true %}
-<div class="ads">
-{% include advertising_wide.html %}
-</div><!-- /.ads -->
