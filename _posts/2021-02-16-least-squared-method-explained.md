@@ -21,8 +21,7 @@ image:
     homepage: ls_title.png
 ---
 
-
-<iframe width="720" height="512" src="https://www.youtube.com/embed/ZaHJBdfsqMU" frameborder="0" allowfullscreen></iframe>
+<iframe width="720" height="512" src="https://www.youtube.com/embed/3wI4jEDbzO4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 {% if true %}
 <div class="ads">
