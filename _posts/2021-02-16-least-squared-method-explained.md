@@ -31,3 +31,13 @@ image:
 
 #### The Full Whiteboard Drawing:
 <img src="{{ site.urlimg }}ls.png" alt="least square" style="width:100%" class="center">
+
+#### Linear Regression Colab Example On Predicting Average US Housing Price
+Two examples are presented in the following colab notebook:
+
+[![Colab example on predicting average US housing price](https://avatars.githubusercontent.com/u/33467679?s=200&v=4)](https://colab.research.google.com/drive/1i-o3lr8q5UJfsW4P2UKZ5es7vhGGt7xO)
+
+One of them uses the linear model we just talked about, another uses 3rd order polynomial model to mitigate underfitting.
+
+
+
