@@ -40,7 +40,7 @@ categories:
 
 <div align="center">
 <a href="https://github.com/xeonqq/FourierFeatureSiren">
-<img src="https://github.com/bmild/bmild.github.io/blob/master/fourfeat/img/github.png" alt="Code" style="width:100%" class=center>
+<img src="{{ site.urlimg }}github.png" alt="Code" style="width:100%" class=center>
 </a>
 </div>
 
@@ -96,10 +96,10 @@ In terms of image fitting, the outcome of FFSiren out-performs both exisiting ne
 
 <div class="row">
   <div class="large-6 columns">
-      <img src="https://github.com/xeonqq/FourierFeatureSiren/blob/main/images/psnr.png">
+      <img src="{{ site.urlimg }}psnr.png">
   </div>
   <div class="large-6 columns">
-      <img src="https://github.com/xeonqq/FourierFeatureSiren/blob/main/images/mse_loss.png">
+      <img src="{{ site.urlimg }}mse_loss.png">
   </div>
 </div>
 
