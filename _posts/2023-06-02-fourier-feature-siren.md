@@ -77,16 +77,45 @@ For fair comparision, all three models are having ~0.263 Million parameters, tra
 FourierFeatureSiren(FFSiren) is simply a combined version of the two. It takes the input embbeding using fourier feature mapping, and feed it into a Siren network with sinusoidal activation functions
 In terms of image fitting, the outcome of FFSiren out-performs both exisiting networks, its MSE loss is ~20 times less than FFN, yet still has the fast converge rate during training and low output noise like Siren.
 
+<div align="center">
+<h6><strong>FFSiren model architecture: </strong></h6>
+<img src="{{ site.urlimg }}ffsiren.drawio.png" width="80%">
+</div>
 
 ### Results
-
-|   |PSNR  | Pixel MSE  |  Gradient MSE |
-|---|---|---|---|
-|Siren   | 36.80  |0.0008   |  33.28 |
-|FFN   | 38.43  | 0.00057  |  48.12 |
-|**FFSiren**  | **51.83**  |**0.0000262**   | **18.12** |
-
-- *PSNR: higher the better; MSE: lower the better*
+<div style="margin-left: auto;
+            margin-right: auto;
+            width: 30%">
+<table>
+    <tr>
+        <td></td>
+        <td>PSNR</td>
+        <td>Pixel MSE</td>
+        <td>Gradient MSE</td>
+    </tr>
+    <tr>
+        <td>Siren</td>
+        <td>36.80</td>
+        <td>0.0008</td>
+        <td>33.28</td>
+    </tr>
+    <tr>
+        <td>FFN</td>
+        <td>38.43</td>
+        <td>0.00057</td>
+        <td>48.12</td>
+    </tr>
+    <tr>
+        <td><strong>FFSiren</strong></td>
+        <td><strong>1.83</strong></td>
+        <td><strong>0.0000262</strong></td>
+        <td><strong>18.12</strong></td>
+    </tr>
+</table>
+</div>
+<div align="center">
+  PSNR: higher the better; MSE: lower the better
+</div>
 
 <br>
 
