@@ -83,9 +83,7 @@ In terms of image fitting, the outcome of FFSiren out-performs both exisiting ne
 </div>
 
 ### Results
-<div style="margin-left: auto;
-            margin-right: auto;
-            width: 30%">
+<div align=center>
 <table>
     <tr>
         <td></td>
