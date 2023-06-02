@@ -107,7 +107,7 @@ In terms of image fitting, the outcome of FFSiren out-performs both exisiting ne
     </tr>
     <tr>
         <td><strong>FFSiren</strong></td>
-        <td><strong>1.83</strong></td>
+        <td><strong>51.83</strong></td>
         <td><strong>0.0000262</strong></td>
         <td><strong>18.12</strong></td>
     </tr>
