@@ -34,13 +34,16 @@ categories:
 </style>
 
 <div align="center">
-  Qian Qian <br>
- amateur researcher<br>
+<a href="https://linkedin.com/in/xeonqq/">
+<h4><strong>Qian Qian</strong></h4>
+ Amateur researcher<br>
+ </a>
 </div>
-
+<br>
 <div align="center">
 <a href="https://github.com/xeonqq/FourierFeatureSiren">
-<img src="{{ site.urlimg }}github.png" alt="Code" style="width:100%" class=center>
+<img src="{{ site.urlimg }}github.png" alt="Code" class=center width="8%">
+<h5><strong>Code</strong></h5>
 </a>
 </div>
 
@@ -82,27 +85,30 @@ In terms of image fitting, the outcome of FFSiren out-performs both exisiting ne
 |FFN   | 38.43  | 0.00057  |  48.12 |
 |**FFSiren**  | **51.83**  |**0.0000262**   | **18.12** |
 
-- PSNR: higher the better; MSE: lower the better 
+- *PSNR: higher the better; MSE: lower the better*
 
+<br>
 
 <div class="row">
-  <div class="large-6 columns">
-   Peak signal-to-noise ratio  
+  <div class="large-6 columns" align="center">
+   <h6><strong>Peak signal-to-noise ratio: </strong></h6>
   </div>
-  <div class="large-6 columns">
-  Mean squared error
+  <div class="large-6 columns" align="center">
+  
+   <h6><strong>Mean squared error: </strong></h6>
   </div>
 </div>
 
 <div class="row">
-  <div class="large-6 columns">
+  <div class="large-6 columns" align="center">
       <img src="{{ site.urlimg }}psnr.png">
   </div>
-  <div class="large-6 columns">
+  <div class="large-6 columns" align="center">
       <img src="{{ site.urlimg }}mse_loss.png">
   </div>
 </div>
 
+<br>
 
 
 |   |Pros  | Cons  |  
