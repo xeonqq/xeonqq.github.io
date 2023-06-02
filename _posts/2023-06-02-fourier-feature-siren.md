@@ -72,6 +72,9 @@ For fair comparision, all three models are having ~0.263 Million parameters, tra
       <source src="{{ site.urlimg }}ffsiren.mp4" type="video/mp4">
 </video>
 
+Roughly looking at the final results, they seem perform equally well. But when zoom into the images, we can see FFN suffers from noisy pixels, and Siren's output is not sharp enough.
+Only the output of FourierFeatureSiren is not having certain obvious drawbacks.
+
 ### FourierFeatureSiren
 
 FourierFeatureSiren(FFSiren) is simply a combined version of the two. It takes the input embbeding using fourier feature mapping, and feed it into a Siren network with sinusoidal activation functions
