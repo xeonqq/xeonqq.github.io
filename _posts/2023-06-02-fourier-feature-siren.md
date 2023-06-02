@@ -68,14 +68,15 @@ In the end, we proposed a combined version **FourierFeatureSiren (FFSiren)**, wh
 
 For fair comparision, all three models are having ~0.263 Million parameters, training with 500 steps and Adam optimizer with learning rate 1e-4.
 
-<video width=1000 controls autoplay loop>
-      <source src="https://github.com/xeonqq/FourierFeatureSiren/blob/main/videos/ffsiren.mp4" type="video/mp4">
+<video width="100%" controls autoplay loop>
+      <source src="{{ site.urlimg }}ffsiren.mp4" type="video/mp4">
 </video>
 
 ### FourierFeatureSiren
 
 FourierFeatureSiren(FFSiren) is simply a combined version of the two. It takes the input embbeding using fourier feature mapping, and feed it into a Siren network with sinusoidal activation functions
 In terms of image fitting, the outcome of FFSiren out-performs both exisiting networks, its MSE loss is ~20 times less than FFN, yet still has the fast converge rate during training and low output noise like Siren.
+
 
 ### Results
 
@@ -109,7 +110,15 @@ In terms of image fitting, the outcome of FFSiren out-performs both exisiting ne
 </div>
 
 <br>
+<div align="center">
+   <h6><strong>Comparision on applying Sobel kernel on output images</strong></h6>
+<img src="{{ site.urlimg }}gradient_comp.png" alt="gradient comparision" class=center width="100%">
+</div>
 
+<br>
+
+
+### Conclusions
 
 |   |Pros  | Cons  |  
 |---|---|---|
