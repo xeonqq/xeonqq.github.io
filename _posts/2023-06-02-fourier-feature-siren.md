@@ -1,7 +1,7 @@
 ---
 layout: page-fullwidth
 
-title: "Fourier Feature Network(FFN) VS Sinusoidal Representation Networks(Siren)."
+title: "Fourier Feature Network(FFN) VS Sinusoidal Representation Networks(Siren)"
 subheadline: "Machine Learning"
 teaser: "Moreover, can we combine them?"
 header: no
@@ -84,6 +84,9 @@ In terms of image fitting, the outcome of FFSiren out-performs both exisiting ne
 <h6><strong>FFSiren model architecture: </strong></h6>
 <img src="{{ site.urlimg }}ffsiren.drawio.png" width="80%">
 </div>
+
+<br>
+*Sidenote*: I have also tried to make the gaussian random B matrix from FFN trainable, but it has no improvement on performance.
 
 ### Results
 <div align=center>
