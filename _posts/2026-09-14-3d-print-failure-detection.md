@@ -1,9 +1,9 @@
 ---
 layout: page-fullwidth
 
-title: "Print Vision: AI-Powered 3D Print Failure Detection API"
-subheadline: "Detect failed 3D prints from a single webcam image with AI"
-teaser: "A webcam, a small classifier, and an OctoPrint plugin for catching failed 3D prints before they waste a spool"
+title: "PrintSheriff: AI-Powered 3D Print Failure Detection"
+subheadline: "Catch failed 3D prints from a single webcam image"
+teaser: "PrintSheriff watches your 3D prints from a webcam; the Print Vision API does the same over HTTP"
 header: no
 
 comments: true
@@ -24,6 +24,7 @@ tags:
 - OctoPrint
 - ntfy
 - 3d printer monitoring
+- PrintSheriff
 ---
 <style>
 @media (max-width: 600px) {
@@ -34,15 +35,10 @@ tags:
 
 <div align="center">
 <a href="https://printsheriff.com">
-<h4><strong>printsheriff.com</strong></h4>
+<img src="{{ site.urlimg }}printsheriff-logo.png" alt="PrintSheriff logo" width="110">
+<h4><strong>PrintSheriff</strong></h4>
 Live demo, OctoPrint plugin and API docs
 </a>
-</div>
-
-<br>
-
-<div align="center">
-<img src="https://rapidapi-prod-apis.s3.amazonaws.com/36f06624-ed5e-4caf-8675-1a23605558a8.png" alt="Print Vision" width="20%">
 </div>
 
 ## Intro
@@ -51,10 +47,10 @@ A failed 3D print is expensive in the most boring way. You lose the filament, th
 
 The camera is usually already there. A cheap webcam pointed at the bed sees enough to catch most failures early. The annoying part is what to do with the frames: streaming them to a server all day is wasteful on a Raspberry Pi setup, and I did not want a monitoring tool that stops working when the internet does.
 
-So the project has two ways to run the same model:
+So PrintSheriff has two ways to run the same model:
 
-* **Print Vision**, the HTTP API on RapidAPI. Send one image, get back a failure probability.
-* **PrintSheriff**, an OctoPrint plugin that runs the model locally on the printer host.
+* **Print Vision API**, the hosted HTTP API on RapidAPI. Send one image, get back a failure probability.
+* **PrintSheriff OctoPrint plugin**, which runs the model locally on the printer host.
 
 Everything is on [printsheriff.com](https://printsheriff.com): the live demo, API docs, plugin install guide, attention gallery and technical details.
 
@@ -74,7 +70,7 @@ Everything is on [printsheriff.com](https://printsheriff.com): the live demo, AP
 
 Cost and latency. Sending every webcam frame to a multimodal model like GPT or Gemini is slow, and it gets expensive fast if you want to look at a frame every few seconds. A small classifier does the job here: one inference takes under 0.5 s, and the free tier on RapidAPI is enough to try it out.
 
-## Print Vision API
+## The Print Vision API
 
 The API is deliberately simple. It accepts the raw image bytes directly, so no JSON wrapper or multipart upload is needed.
 
@@ -138,9 +134,9 @@ I use this mostly when a prediction looks wrong. If the model is confident about
 
 This is also how I found several false positives during development. Sometimes the model was looking at the background instead of the print, which is much easier to notice with a heatmap than with a single number.
 
-## printsheriff.com
+## PrintSheriff
 
-Print Vision is the hosted API. The rest of the project lives at [printsheriff.com](https://printsheriff.com), and the plugin is what I actually use on my own printer.
+PrintSheriff is the project. The hosted API is Print Vision, and the OctoPrint plugin is what I actually use on my own printer.
 
 The site has a [live demo](https://printsheriff.com/demo) where you can upload a photo or use your webcam, the [API docs](https://printsheriff.com/api), an [attention gallery](https://printsheriff.com/attention), and the [OctoPrint plugin](https://printsheriff.com/plugin) with install instructions. The plugin is the part I would recommend if you already run OctoPrint, because the frames never leave your local network.
 
@@ -244,7 +240,7 @@ The model returns a probability instead of a hard yes/no, so the threshold is a 
 <div align="center">
 
 <img src="https://i.postimg.cc/6pHxQb0q/roc-plot.png"
-  alt="Print Vision ROC curve"
+  alt="PrintSheriff failure classifier ROC curve"
   width="80%">
 
 </div>
@@ -257,20 +253,20 @@ The long-term goal is still simple:
 
 > **Give every 3D printer a pair of eyes.**
 
-If you run OctoPrint, the plugin is the easiest way to try it, and it is free. If you are building your own monitoring system, the API on RapidAPI is there for that.
+If you run OctoPrint, the PrintSheriff plugin is the easiest way to try it, and it is free. If you are building your own monitoring system, the Print Vision API on RapidAPI is there for that.
 
 <div align="center">
 
 <a href="https://printsheriff.com">
-<h3>Try it on printsheriff.com →</h3>
+<h3>Try PrintSheriff →</h3>
 </a>
 
 <a href="https://github.com/xeonqq/octoprint_printsheriff">
-OctoPrint plugin on GitHub
+PrintSheriff plugin on GitHub
 </a>
 &nbsp;|&nbsp;
 <a href="https://rapidapi.com/xeonqq/api/print-vision">
-Print Vision on RapidAPI
+Print Vision API on RapidAPI
 </a>
 
 </div>
