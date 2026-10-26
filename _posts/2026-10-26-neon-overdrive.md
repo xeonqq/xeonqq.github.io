@@ -83,6 +83,16 @@ The whole thing was vibe coded with DeepSeek, GLM and Qwen, with me steering and
 | `Esc` / `P` | Pause |
 | `M` | Mute |
 
+## On mobile
+
+On a phone the game switches to a touch layout. The keyboard card disappears from the menu, the left side becomes a steering joystick, and JUMP, FIRE and pause sit on the right.
+
+<div align="center">
+<img src="{{ site.urlimg }}neon-overdrive-mobile.webp" width="100%" alt="NEON OVERDRIVE mobile touch controls">
+<br>
+<em>Mobile landscape: joystick on the left, jump and fire on the right.</em>
+</div>
+
 ## Play
 
 <div align="center">
