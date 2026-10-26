@@ -66,6 +66,8 @@ Plain HTML5 Canvas 2D and ES modules. No engine, no build step, no sprite sheets
 
 The Roadster is a lofted 3D mesh rather than a flat sprite, so the 360 flip keeps its volume. Buildings fade to a ghost cutaway when they would hide the car, and the game lowers its internal resolution when the frame rate needs help.
 
+The whole thing was vibe coded with DeepSeek, GLM and Qwen, with me steering and testing.
+
 ## Controls
 
 | Key | Action |
