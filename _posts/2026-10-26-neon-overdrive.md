@@ -55,7 +55,7 @@ Most of the fun is in the middle: drifting through rain-soaked streets, jumping 
 * Score from drift combos, near misses, air time and kills. Personal best is saved in the browser.
 
 <div align="center">
-<img src="{{ site.urlimg }}neon-overdrive-jump.webp" width="100%" alt="NEON OVERDRIVE air jump">
+<img src="{{ site.urlimg }}neon-overdrive-jump.webp" width="100%" alt="NEON OVERDRIVE mid-360 flip over a roadblock">
 <br>
 <em>Air jump over a blockade. A clean 360 landing gives some turbo back.</em>
 </div>
